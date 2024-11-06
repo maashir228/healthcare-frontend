@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiEndpoint = 'http://127.0.0.1:5000/translate';
+const apiEndpoint = process.env.API_PATH + '/translate';
 
 export const translateText = async (text, targetLanguage) => {
   try {
