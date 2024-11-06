@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const apiEndpoint = process.env.API_PATH + '/translate';
+
+const apiEndpoint = process.env.REACT_APP_API_PATH; 
 
 export const translateText = async (text, targetLanguage) => {
   try {
